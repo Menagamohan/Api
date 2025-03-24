@@ -26,6 +26,63 @@
     /* Adds a glow effect */
 }
 
+@media (max-width: 992px) {
+    /* Make the navbar brand text smaller and center align it */
+    .navbar-brand {
+        font-size: 16px;
+        text-align: center;
+        margin-left: 0;
+        display: block;
+    }
+    /* Make the "Book Now!" button larger on mobile */
+    .navbar .btn-outline-primary {
+        font-size: 16px;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    /* Collapse the navbar items into a hamburger menu */
+    .navbar-collapse {
+        text-align: center;
+    }
+    /* Adjust the size of the navbar-toggler */
+    .navbar-toggler {
+        font-size: 20px;
+    }
+    /* Change the color of the close button to match navbar theme */
+    .navbar .btn-close {
+        color: aliceblue;
+    }
+}
+
+
+/* For mobile devices (screens smaller than 576px) */
+
+@media (max-width: 576px) {
+    /* Adjust the navbar brand size */
+    .navbar-brand {
+        font-size: 14px;
+        text-align: center;
+        margin-left: 0;
+    }
+    /* Adjust the size and padding for the "Book Now!" button */
+    .navbar .btn-outline-primary {
+        font-size: 14px;
+        padding: 12px 25px;
+        width: 100%;
+    }
+    /* Adjust navbar text styling */
+    .navbar-text {
+        display: none;
+    }
+    /* Adjust the navbar background color on mobile for better visibility */
+    .navbar {
+        background-color: #343a40;
+        /* Dark background for mobile */
+    }
+}
+
 
 /* navbar end */
 
@@ -61,8 +118,8 @@
 }
 
 .bnr-img2 {
-    position: absolute;
-    top: 30px;
+    /* position: absolute; */
+    top: 10px;
     left: 0;
 }
 
@@ -484,3 +541,273 @@ h3 {
 
 
 /* end */
+
+
+/* car start */
+
+.car_section .car_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 75px 0;
+}
+
+.car_section .car_container .box {
+    min-width: 250px;
+    max-width: 250px;
+    /* margin: 55px 15px; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.car_section .car_container .box .img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.car_section .car_container .box .img-box img {
+    max-width: 100%;
+}
+
+.car_section .car_container .box .detail-box {
+    margin-top: 15px;
+}
+
+.img-box img {
+    width: 250px;
+    height: 250px;
+    border-radius: 80%;
+    object-fit: cover;
+}
+
+
+/* .car_section .car_container .box .detail-box h5 {
+    font-weight: bold;
+}
+
+.car_section .car_container .box .detail-box a {
+    display: inline-block;
+    padding: 8px 25px;
+    background-color: #f22324;
+    color: #fefdfc;
+    border-radius: #000000;
+    border: 1px solid #f22324;
+    margin-top: 25px;
+}
+
+.car_section .car_container .box .detail-box a:hover {
+    background-color: transparent;
+    color: #f22324;
+} */
+
+
+/* .car_section .car_container .box::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 250px;
+    -webkit-transform: translate(-50%, -50%) scale(2);
+    transform: translate(-50%, -50%) scale(2);
+    border-radius: 100%;
+    background-color: #f2f2f2;
+    z-index: -1;
+} */
+
+
+/* car end */
+
+
+/*** Appointment start***/
+
+.appointment {
+    background: linear-gradient(rgba(1, 95, 201, .9), rgba(1, 95, 201, .9)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+
+/* Appointment end */
+
+
+/* info section */
+
+.info_section {
+    background-color: rgba(230, 241, 254, 0.9);
+    color: #0c0909;
+}
+
+.info_section h5 {
+    margin-bottom: 20px;
+}
+
+.info_section .info_contact .contact_link_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.info_section .info_contact .contact_link_box a {
+    margin: 5px 0;
+    color: #070505;
+}
+
+.info_section .info_contact .contact_link_box a i {
+    margin-right: 5px;
+}
+
+.info_section .info_contact .contact_link_box a:hover {
+    color: #198ec4;
+}
+
+.info_section .info_social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 20px;
+}
+
+.info_section .info_social a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #0a0808;
+    width: 30px;
+    height: 30px;
+    background-color: #100c0c;
+    color: #fbf3f3;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.info_section .info_social a:hover {
+    color: #19aac4;
+}
+
+.info_section .info_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.info_section .info_links a {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #060505;
+}
+
+.info_section .info_links a i {
+    margin-right: 5px;
+}
+
+.info_section .info_links a:hover,
+.info_section .info_links a.active {
+    color: #199fc4;
+}
+
+.info_section form input {
+    border: 1px solid #19a8c4;
+    background-color: transparent;
+    width: 100%;
+    height: 45px;
+    padding-left: 15px;
+    color: #0c0a0a;
+    outline: none;
+}
+
+.info_section form input::-webkit-input-placeholder {
+    color: #080707;
+}
+
+.info_section form input:-ms-input-placeholder {
+    color: #0a0909;
+}
+
+.info_section form input::-ms-input-placeholder {
+    color: #100f0f;
+}
+
+.info_section form input::placeholder {
+    color: #121111;
+}
+
+.info_section form button {
+    display: inline-block;
+    background-color: #19b9c4;
+    color: #050505;
+    padding: 10px 55px;
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: none;
+    margin-top: 15px;
+}
+
+.info_section form button:hover {
+    background-color: #5bb2e1;
+}
+
+
+/* end info section */
+
+
+/* footer section*/
+
+.footer_section {
+    background-color: #fdfdfe;
+    text-align: center;
+    color: #000000;
+}
+
+.footer_section p {
+    margin: 0;
+    padding: 20px 0;
+    color: #1983c4;
+}
+
+.footer_section p a {
+    color: inherit;
+}
+
+
+/* footer end */
