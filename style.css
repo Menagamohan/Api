@@ -22,7 +22,7 @@
     /* Scales the button slightly */
     cursor: pointer;
     /* Makes the cursor a hand pointer */
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
     /* Adds a glow effect */
 }
 
