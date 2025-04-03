@@ -46,22 +46,14 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <label>First Name*</label><br>
-                        <input type="text" name="FirstName*" value="" pattern="[A-Za-z]{8,}" required/><br><br>
+                    <form method="post" action="booknow.php">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
 
-                        <label>Mobile No*</label><br>
-                        <input type="number" pattern="[A-Za-z1-9]{6}" required/><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
 
-                        <label>Location*</label><br>
-                        <input type="text" name="FirstName*" value="" pattern="[A-Za-z]{8,}" required/><br><br>
-
-                        <label>Company Name*</label><br>
-                        <input type="text" name="FirstName*" value="" pattern="[A-Za-z]{8,}" required/><br><br>
-
-                        <div>
-                            <button type="submit" class="btn btn-primary" style="justify-content: center;display: flex;text-align: center;">Apply Now</button>
-                        </div>
+                        <button type="submit" name="submit">Send</button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -174,7 +166,10 @@
                             </div>
                         </div><br>
                         <div class="d-flex align-items-center animated fadeInUp delay-4 duration-5">
-                            <a class="btn btn-primary" data-toggle="modal" data-target="#book"><span>Book a Demo</span></a>
+                            <!-- <a class="btn btn-primary" data-toggle="modal" data-target="#book"><span>Book a Demo</span></a> -->
+                            <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Book a Demo
+                            </button>
                             <a class="btn btn-primary popup-youtube ms-4 d-flex align-items-center iframe-link" data-mfp-src="https://youtu.be/w96mzacpLAA?si=SvCtaxgIwUD4O6LV" href="#"><span>Play Now</span></a>
                         </div>
                     </div>
@@ -190,6 +185,47 @@
                 </div>
             </div>
         </div>
+
+        <!-- model start -->
+        <div class="modal fade" id="book" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Get your whatsapp API Now!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" action="booknow.php">
+                            <!-- <label>First Name*</label><br>
+                            <input type="text" name="stfirstname" /><br><br>
+
+                            <label>Mobile No*</label><br>
+                            <input type="number" name="stmobileno" /><br><br>
+
+                            <label>Location*</label><br>
+                            <input type="text" name="stlocation" /><br><br>
+
+                            <label>Company Name*</label><br>
+                            <input type="text" name="stcompanyname" /><br><br>
+                            <input type="submit" value="submit" name="submit"> -->
+
+
+                            <input type="text" placeholder="enter name" name="name"><br>
+                            <input type="email" placeholder="enter email" name="email"><br>
+                            <input type="submit" value="submit" name="submit">
+
+                            <div>
+                                <!-- <button type="submit" class="btn btn-primary" style="justify-content: center;display: flex;text-align: center;">Apply Now</button> -->
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- model end -->
 
         <div class="modal fade" id="book" role="dialog">
             <div class="modal-dialog-centered">
@@ -340,7 +376,7 @@
                         <h1>AI Chatbot Service Provider</h1>
                         <p style="color: #3f5df6; font-size: 20px;">LeMeniz the Whatsapp Api Based Chatbot Service Provider. Reach customers with personalized marketing campaigns through WhatsApp and boost sales. Segment your customers based on attributes and past behaviour for targeted messaging.
                             Create Engaging & Interactive Messages with Rich Media! Track the success of your campaigns with metrics for sent, delivered, read, and replied.</p><br>
-                        <a class="btn btn-outline-primary" href="#contact">About LeMeniz</a>
+                        <a class="btn btn-outline-primary" href="aboutus.html">About LeMeniz</a>
                     </div>
                     <!-- end of text-container -->
                 </div>
@@ -681,16 +717,16 @@
                                         <div class="container">
                                             <div class="row row-cols-auto">
                                                 <div class="col">
-                                                    <a href="https://www.facebook.com/askeva.io" target="_blank"><i class="fab fa-facebook-f" style="font-size: 30px; color: #f6f9fa;"></i></a>
+                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/lemeniz/?ref=pages_you_manage" target="_blank"><i class="fab fa-facebook-f" style="font-size: 30px; color: #f6f9fa;"></i></a>
                                                 </div>
                                                 <div class="col">
-                                                    <a href="https://www.instagram.com/askeva.io/" target="_blank"><i class="fab fa-instagram" style="font-size: 30px; color: #f6f9fa;"></i></a>
+                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CTOtelGJGjp/?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram" style="font-size: 30px; color: #f6f9fa;"></i></a>
                                                 </div>
                                                 <div class="col">
                                                     <a href="https://www.linkedin.com/company/askevaio/" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 30px; color: #f6f9fa;"></i></a>
                                                 </div>
                                                 <div class="col">
-                                                    <a href="https://www.youtube.com/channel/UCKBwYFFB2GbSnXhhowRk7qQ" target="_blank"><i class="fab fa-youtube" style="font-size: 30px; color: #f6f9fa;"></i></a>
+                                                    <a href="https://www.youtube.com/channel/UC29PhUP28_7rxr5cxCVHHLA" target="_blank"><i class="fab fa-youtube" style="font-size: 30px; color: #f6f9fa;"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -722,9 +758,9 @@
                                 <div class="gradient-floor blue-to-purple"></div><br>
                                 <ul class="media-icon list-unstyled">
                                     <li><a href="chatbot.html">Whatsapp API Chatbot</a></li>
-                                    <li><a href="whatsappautomation.html">Whatsapp Automation</a></li>
-                                    <li><a href="whatsappecommerce.html">Whatsapp E-Commerce</a></li>
-                                    <li><a href="customersupport.html">Whatsapp Customer Support</a></li>
+                                    <li><a href="automation.html">Whatsapp Automation</a></li>
+                                    <li><a href="e-commerce.html">Whatsapp E-Commerce</a></li>
+                                    <li><a href="support.html">Whatsapp Customer Support</a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4 mt-5 mt-md-0 footer-list">
@@ -733,7 +769,6 @@
                                 <ul class="media-icon list-unstyled">
                                     <li><a href="education.html">Case Study</a></li>
                                     <li><a href="https://askeva.gitbook.io/askeva-docs/faqs/faqs" target="_blank">FAQs</a></li>
-                                    <li><a href="career.html">Career</a></li>
                                     <li><a href="https://askeva.gitbook.io/askeva-docs/">Help Desk</a></li>
                                 </ul>
                             </div>

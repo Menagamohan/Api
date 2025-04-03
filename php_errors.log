@@ -1,0 +1,12 @@
+[03-Apr-2025 09:40:16 Europe/Berlin] PHP Fatal error:  Allowed memory size of 1073741824 bytes exhausted (tried to allocate 8192 bytes) in C:\xampp2\htdocs\api\booknow.php on line 21
+[03-Apr-2025 09:45:00 Europe/Berlin] PHP Fatal error:  Allowed memory size of 1073741824 bytes exhausted (tried to allocate 8192 bytes) in C:\xampp2\htdocs\api\booknow.php on line 21
+[03-Apr-2025 09:48:34 Europe/Berlin] PHP Fatal error:  Allowed memory size of 1073741824 bytes exhausted (tried to allocate 8192 bytes) in C:\xampp2\htdocs\api\booknow.php on line 21
+[03-Apr-2025 10:26:43 Europe/Berlin] PHP Warning:  require(vendor/autoload.php): Failed to open stream: No such file or directory in C:\xampp2\htdocs\api\booknow.php on line 9
+[03-Apr-2025 10:26:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='C:\xampp2\php\PEAR') in C:\xampp2\htdocs\api\booknow.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp2\htdocs\api\booknow.php on line 9
+[03-Apr-2025 10:28:33 Europe/Berlin] PHP Fatal error:  Allowed memory size of 1073741824 bytes exhausted (tried to allocate 32768 bytes) in C:\xampp2\htdocs\api\booknow.php on line 1
+[03-Apr-2025 10:31:03 Europe/Berlin] PHP Fatal error:  Allowed memory size of 1073741824 bytes exhausted (tried to allocate 32768 bytes) in C:\xampp2\htdocs\api\booknow.php on line 1
+[03-Apr-2025 10:31:45 Europe/Berlin] PHP Fatal error:  Allowed memory size of 1073741824 bytes exhausted (tried to allocate 32768 bytes) in C:\xampp2\htdocs\api\booknow.php on line 1
+[03-Apr-2025 10:58:11 Europe/Berlin] PHP Fatal error:  Allowed memory size of 1073741824 bytes exhausted (tried to allocate 32768 bytes) in C:\xampp2\htdocs\api\booknow.php on line 1
