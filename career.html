@@ -46,23 +46,22 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form method="post" action="booknow.php">
                         <label>First Name*</label><br>
-                        <input type="text" name="FirstName*" value="" pattern="[A-Za-z]{8,}" required/><br><br>
+                        <input type="text" name="stFirstname" required /><br><br>
 
                         <label>Mobile No*</label><br>
-                        <input type="number" pattern="[A-Za-z1-9]{6}" required/><br><br>
+                        <input type="number" name="stMobileno" required /><br><br>
 
                         <label>Location*</label><br>
-                        <input type="text" name="FirstName*" value="" pattern="[A-Za-z]{8,}" required/><br><br>
+                        <input type="text" name="stLocation" required /><br><br>
 
                         <label>Company Name*</label><br>
-                        <input type="text" name="FirstName*" value="" pattern="[A-Za-z]{8,}" required/><br><br>
+                        <input type="text" name="stCompanyname" required /><br><br>
 
-                        <div>
-                            <button type="submit" class="btn btn-primary" style="justify-content: center;display: flex;text-align: center;">Apply Now</button>
-                        </div>
+                        <input type="submit" value="submit" name="submit">
                     </form>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

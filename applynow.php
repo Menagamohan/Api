@@ -1,5 +1,4 @@
 <?php
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -16,46 +15,41 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
-    // Sanitize input data
-    $firstname = htmlspecialchars(trim($_POST["stFirstname"]));
-    $mobileno = htmlspecialchars(trim($_POST["stMobileno"]));
-    $location = htmlspecialchars(trim($_POST["stLocation"]));
-    $companyname = htmlspecialchars(trim($_POST["stCompanyname"]));
+// Form Handling
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars(trim($_POST["name"]));
+    $mobileno = htmlspecialchars(trim($_POST["mobileno"]));
 
-    if (!$firstname || !$mobileno || !$location || !$companyname) {
+    if (!$name || !$mobileno) {
         die("❌ Please fill out all fields.");
     }
 
-    // Insert into DB
-    $stmt = $conn->prepare("INSERT INTO details (Firstname, Mobileno, Location, Companyname) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("ssss", $firstname, $mobileno, $location, $companyname);
+    // Insert into Database
+    $stmt = $conn->prepare("INSERT INTO  apply (name, mobileno) VALUES (?, ?)");
+    $stmt->bind_param("ss", $name, $mobileno);
 
     if ($stmt->execute()) {
         echo "✅ Data inserted successfully!<br>";
 
-        // Send Email
+        // Send Email Notification
         $mail = new PHPMailer(true);
         try {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->Username = 'menagamohan26@gmail.com';  // Your full Gmail address
-            $mail->Password = 'ekidtmjaraacrhpw';  // Use the App Password, not your Gmail password
+            $mail->Password = 'ekidtmjaraacrhpw';  // Use an App Password, not your Gmail password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
             $mail->setFrom('menagamohan26@gmail.com', 'Booking Form');
-            $mail->addAddress('menagamohan26@gmail.com');
+            $mail->addAddress('menagamohan26@gmail.com'); 
 
             $mail->isHTML(true);
             $mail->Subject = 'New Booking Submission';
             $mail->Body = "<h3>New Form Submission</h3>
-                           <p><strong>Name:</strong> $firstname</p>
-                           <p><strong>Mobile No:</strong> $mobileno</p>
-                           <p><strong>Location:</strong> $location</p>
-                           <p><strong>Company Name:</strong> $companyname</p>";
+                           <p><strong>Name:</strong> $name</p>
+                           <p><strong>Mobile No:</strong> $mobileno</p>";
 
             $mail->send();
             echo "✅ Email sent successfully!";
@@ -68,6 +62,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
 
     $stmt->close();
 }
-
 $conn->close();
 ?>

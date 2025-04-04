@@ -47,14 +47,21 @@
                 </div>
                 <div class="modal-body">
                     <form method="post" action="booknow.php">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
+                        <label>First Name*</label><br>
+                        <input type="text" name="stFirstname" required /><br><br>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label>Mobile No*</label><br>
+                        <input type="number" name="stMobileno" required /><br><br>
 
-                        <button type="submit" name="submit">Send</button>
+                        <label>Location*</label><br>
+                        <input type="text" name="stLocation" required /><br><br>
+
+                        <label>Company Name*</label><br>
+                        <input type="text" name="stCompanyname" required /><br><br>
+
+                        <input type="submit" value="submit" name="submit">
                     </form>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -117,11 +124,12 @@
                         <a class="nav-link" href="contactus.html">Contact Us</a>
                     </li>
                 </ul>
-                <button type="button" class="btn bg-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <!-- <button type="button" class="btn bg-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Login
-            </button>
-                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgba(46, 181, 248, 0.5);">
-                Book Now!
+            </button> -->
+                <a class="nav-link btn bg-light" href="http://whatsapp.lemeniz.com/">Login</a>&nbsp; &nbsp;
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#" style="background-color: rgba(46, 181, 248, 0.5);">
+                GET API
             </button>
             </div>
         </div>
@@ -169,8 +177,9 @@
                             <!-- <a class="btn btn-primary" data-toggle="modal" data-target="#book"><span>Book a Demo</span></a> -->
                             <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 Book a Demo
-                            </button>
-                            <a class="btn btn-primary popup-youtube ms-4 d-flex align-items-center iframe-link" data-mfp-src="https://youtu.be/w96mzacpLAA?si=SvCtaxgIwUD4O6LV" href="#"><span>Play Now</span></a>
+                            </button>&nbsp; &nbsp;Play Now----
+
+                            <a class="nav-link " href="https://youtu.be/w96mzacpLAA?si=fxzGUltldsxG47od"><img src="images/play.png" alt=""></a>
                         </div>
                     </div>
 
@@ -196,28 +205,21 @@
                     </div>
                     <div class="modal-body">
                         <form method="post" action="booknow.php">
-                            <!-- <label>First Name*</label><br>
-                            <input type="text" name="stfirstname" /><br><br>
+                            <label>First Name*</label><br>
+                            <input type="text" name="stfirstname" required /><br><br>
 
                             <label>Mobile No*</label><br>
-                            <input type="number" name="stmobileno" /><br><br>
+                            <input type="number" name="stmobileno" required /><br><br>
 
                             <label>Location*</label><br>
-                            <input type="text" name="stlocation" /><br><br>
+                            <input type="text" name="stlocation" required /><br><br>
 
                             <label>Company Name*</label><br>
-                            <input type="text" name="stcompanyname" /><br><br>
-                            <input type="submit" value="submit" name="submit"> -->
+                            <input type="text" name="stcompanyname" required /><br><br>
 
-
-                            <input type="text" placeholder="enter name" name="name"><br>
-                            <input type="email" placeholder="enter email" name="email"><br>
                             <input type="submit" value="submit" name="submit">
-
-                            <div>
-                                <!-- <button type="submit" class="btn btn-primary" style="justify-content: center;display: flex;text-align: center;">Apply Now</button> -->
-                            </div>
                         </form>
+
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -475,7 +477,7 @@
             <div class="hidecasestudy mouse-parallax">
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-6">
-                        <div class="caseright" style="margin-left: 100px;">
+                        <div class="caseright" style="margin-left: 200px;">
                             <a class="btn btn-outline-primary buttonicon" href="health.html">
                                 <i class="iconcase fa fa-stethoscope" aria-hidden="true" style="font-size: 18px;"></i> &nbsp;&nbsp;
                                 <span class="casediv ">Healthcare</span>
@@ -491,7 +493,7 @@
                         </center>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="caseleft">
+                        <div class="caseleft" style="margin-right: 200px;">
                             <a class="btn btn-outline-primary buttonicon" href="hr.html">
                                 <i class="iconcase fa fa-users" aria-hidden="true" style="font-size: 18px;"></i> &nbsp;&nbsp;
                                 <span class="casediv">HR</span>
@@ -503,21 +505,21 @@
                     <div class="col-lg-3 col-md-6">
 
 
-                        <div class="caseright" style="padding-top: 50px;">
+                        <div class="caseright" style="padding-top: 50px; margin-left: 160px;">
                             <a class="btn btn-outline-primary buttonicon" href="realestate.html">
                                 <i class="iconcase fa fa-building" aria-hidden="true" style="font-size: 18px;"></i> &nbsp;&nbsp;
                                 <span class="casediv">Realestate</span>
                             </a>
                         </div><br>
 
-                        <div class="caseleft" style="padding-top: 100px;">
+                        <div class="caseleft" style="padding-top: 100px; margin-left: 120px;">
                             <a class="btn btn-outline-primary buttonicon" href="travel.html">
                                 <i class="iconcase fa fa-plane" aria-hidden="true" style="font-size: 18px;"></i> &nbsp;&nbsp;
                                 <span class="casediv">Travel</span>
                             </a>
                         </div><br>
 
-                        <div class="caseright" style="padding-top: 100px;">
+                        <div class="caseright" style="padding-top: 100px; margin-left: 200px;">
                             <a class="btn btn-outline-primary buttonicon" href="retail.html">
                                 <i class="iconcase fa fa-share" aria-hidden="true" style="font-size: 18px;"></i> &nbsp;&nbsp;
                                 <span class="casediv">Retail</span>
@@ -546,7 +548,7 @@
                             </a>
                         </div><br>
 
-                        <div class="caseleft" style="padding-top: 100px;">
+                        <div class="caseleft" style="padding-top: 100px; margin-right: 140px; ">
                             <a class="btn btn-outline-primary buttonicon" href="ecommerce.html">
                                 <i class="iconcase fa fa-shopping-cart" aria-hidden="true" style="font-size: 18px;"></i> &nbsp;&nbsp;
                                 <span class="casediv">E-Commerce</span>
@@ -579,7 +581,8 @@
                         <div class="card" style="width: 400px;">
                             <img class="quotes" src="images/quotes.svg" alt="alternative" style="width: 40px; height: 40px;">
                             <div class="card-body">
-                                <img src="images/makeconversation.png" alt="" style="width: 200px; height: 150px;">
+                                <!-- <img src="images/makeconversation.png" alt="" style="width: 200px; height: 150px;"> -->
+                                <i class="fas fa-comments" style="color: #10c756; font-size: 60px;"></i><br><br>
                                 <h2>Make Conversations</h2>
                                 <p class="testimonial-text">WhatsApp chatbot helps your business to drive marketing,sales,and support outcomes across the customer purchase journey.</p>
                             </div>
@@ -591,8 +594,10 @@
                         <!-- Card -->
                         <div class="card" style="width: 400px;">
                             <img class="quotes" src="images/quotes.svg" alt="alternative" style="width: 40px; height: 40px;">
+
                             <div class="card-body">
-                                <img src="images/friendly.png" alt="" style="width: 200px; height: 150px;">
+                                <!-- <img src="images/friendly.png" alt="" style="width: 200px; height: 150px;"> -->
+                                <i class="fas fa-smile" style="color: #10c756; font-size: 60px;"></i><br><br>
                                 <h2>Friendly Experience</h2>
                                 <p class="testimonial-text">WhatsApp chatbot makes the flow possible to deliver CTAs,product lists,media,and more to make a friendly and memorable experience.</p>
                             </div>
@@ -605,7 +610,8 @@
                         <div class="card" style="width: 400px;">
                             <img class="quotes" src="images/quotes.svg" alt="alternative" style="width: 40px; height: 40px;">
                             <div class="card-body">
-                                <img src="images/reachcustomer.png" alt="" style="width: 200px; height: 150px;">
+                                <!-- <img src="images/reachcustomer.png" alt="" style="width: 200px; height: 150px;"> -->
+                                <i class="fas fa-bullhorn" style="color: #10c756; font-size: 60px;"></i><br><br>
                                 <h2>Reach Customers</h2>
                                 <p class="testimonial-text">Connect your business by meeting them on WhatsApp messaging platform support to make it easy.</p>
                             </div>
@@ -720,10 +726,10 @@
                                                     <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/lemeniz/?ref=pages_you_manage" target="_blank"><i class="fab fa-facebook-f" style="font-size: 30px; color: #f6f9fa;"></i></a>
                                                 </div>
                                                 <div class="col">
-                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.instagram.com/p/CTOtelGJGjp/?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram" style="font-size: 30px; color: #f6f9fa;"></i></a>
+                                                    <a href="https://www.instagram.com/lemeniztechnologies?igsh=cjl0M2pqdHo5YmRk" target="_blank"><i class="fab fa-instagram" style="font-size: 30px; color: #f6f9fa;"></i></a>
                                                 </div>
                                                 <div class="col">
-                                                    <a href="https://www.linkedin.com/company/askevaio/" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 30px; color: #f6f9fa;"></i></a>
+                                                    <a href="https://in.linkedin.com/company/lemeniz-infotech" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 30px; color: #f6f9fa;"></i></a>
                                                 </div>
                                                 <div class="col">
                                                     <a href="https://www.youtube.com/channel/UC29PhUP28_7rxr5cxCVHHLA" target="_blank"><i class="fab fa-youtube" style="font-size: 30px; color: #f6f9fa;"></i></a>
@@ -743,9 +749,9 @@
                                 <h4 class="title">Company</h4>
                                 <div class="gradient-floor blue-to-purple"></div><br>
                                 <ul class="list-unstyled">
-                                    <li><a href="terms-condition.html">Terms & Condition</a></li>
+                                    <li><a href="terms.html">Terms & Condition</a></li>
                                     <li><a href="refund.html">Refund policy</a></li>
-                                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                                    <li><a href="privacy.html">Privacy Policy</a></li>
                                 </ul><br>
                                 <h4 class="title">Payment</h4>
                                 <div class="gradient-floor blue-to-purple"></div><br>
@@ -778,10 +784,10 @@
                                 <div class="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
                                     <h5 class="mb-0">Get a Free Whatsapp API</h5>
                                     <div class="subscribe-form sm-mt-2">
-                                        <form id="mc-form" class="group" name="casestudy_form" ng-submit="apiForm(user)">
-                                            <input type="text" class="form-control" name="phone" id="phnum" placeholder="Mobile Number" ng-model="user.phone" required="">
-                                            <span class="red-text" ng-show="casestudy_form.phone.$error.pattern">Please Enter a 10 Digit Number</span>
-                                            <button class="btn btn-theme" type="submit" ng-disabled="!user.phone || casestudy_form.$invalid"> Apply Now </button>
+                                        <form id="mc-form" class="group" name="casestudy_form" method="post" action="applynow.php">
+                                            <input type="text" class="form-control" name="phone" id="phnum" placeholder="Mobile Number" required>
+                                            <!-- <?php if (!empty($error)) echo "<span class='red-text'>$error</span>"; ?> -->
+                                            <button class="btn btn-theme" type="submit">Apply Now</button>
                                         </form>
                                     </div>
                                 </div>

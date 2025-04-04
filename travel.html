@@ -46,23 +46,22 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form method="post" action="booknow.php">
                         <label>First Name*</label><br>
-                        <input type="text" name="FirstName*" value="" pattern="[A-Za-z]{8,}" required/><br><br>
+                        <input type="text" name="stFirstname" required /><br><br>
 
                         <label>Mobile No*</label><br>
-                        <input type="number" pattern="[A-Za-z1-9]{6}" required/><br><br>
+                        <input type="number" name="stMobileno" required /><br><br>
 
                         <label>Location*</label><br>
-                        <input type="text" name="FirstName*" value="" pattern="[A-Za-z]{8,}" required/><br><br>
+                        <input type="text" name="stLocation" required /><br><br>
 
                         <label>Company Name*</label><br>
-                        <input type="text" name="FirstName*" value="" pattern="[A-Za-z]{8,}" required/><br><br>
+                        <input type="text" name="stCompanyname" required /><br><br>
 
-                        <div>
-                            <button type="submit" class="btn btn-primary" style="justify-content: center;display: flex;text-align: center;">Apply Now</button>
-                        </div>
+                        <input type="submit" value="submit" name="submit">
                     </form>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -125,39 +124,18 @@
                         <a class="nav-link" href="contactus.html">Contact Us</a>
                     </li>
                 </ul>
-                <button type="button" class="btn bg-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Login
-            </button>
-                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: rgba(46, 181, 248, 0.5);">
-                Book Now!
+                <a class="nav-link btn bg-light" href="http://whatsapp.lemeniz.com/">Login</a>&nbsp; &nbsp;
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#" style="background-color: rgba(46, 181, 248, 0.5);">
+                GET API
             </button>
             </div>
         </div>
-    </nav>
+    </nav><br><br>
     <!-- navbar end -->
 
-    <!--page title start-->
-    <section class="page-title overflow-hidden animatedBackground" data-bg-img="images/pattern/05.png" style="padding-bottom: 0px !important;">
-        <div class="container">
-            <div class="row align-items-center toppadding wow slideInDown">
-                <div class="col-md-12 pt-6 pt-lg-0 pt-xl-5">
-                    <h1 style="line-height: 45px;">WhatsApp Chatbot For <span style="color: #21adf3;">Travel & Hospitality</span></h1>
-                    <!--<nav aria-label="breadcrumb" class="page-breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a>
-          </li>
-          <li class="breadcrumb-item">/
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">Education</li>
-        </ol>
-      </nav>-->
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!--page title end-->
+    <center>
+        <h1 style="line-height: 45px;">WhatsApp Chatbot For <span style="color: #21adf3;">Travel & Hospitality</span></h1>
+    </center>
 
 
     <!--body content start-->
@@ -245,10 +223,10 @@
                                         <div class="testimonial-content">
                                             <div class="testimonial-quote"><i class="flaticon-quotation"></i>
                                             </div>
-                                            <p>LeMeniz, Virtual Teaching Assistants help the students to complete their projects and also focus on the students learning process.</p>
+                                            <p style="color: #000;">LeMeniz, Virtual Teaching Assistants help the students to complete their projects and also focus on the students learning process.</p>
                                             <div class="testimonial-caption">
 
-                                                <label style="background-color: rgba(0, 0, 0, 0.1); padding: 20px; font-size: 18px;text-transform: uppercase;">Chatbot
+                                                <label style="background-color: rgba(9, 165, 237, 0.929); padding: 20px; font-size: 18px;text-transform: uppercase;">Chatbot
                           as a teaching <br>assistant</label>
                                             </div>
                                         </div>
@@ -272,9 +250,9 @@
                                         <div class="testimonial-content">
                                             <div class="testimonial-quote"><i class="flaticon-quotation"></i>
                                             </div>
-                                            <p>WhatsApp chatbot are most useful for the students and also for the teachers to get feedback and give them the everyday task to take off.</p>
+                                            <p style="color: #000;">WhatsApp chatbot are most useful for the students and also for the teachers to get feedback and give them the everyday task to take off.</p>
                                             <div class="testimonial-caption">
-                                                <label style="background-color: rgba(0, 0, 0, 0.1); padding: 20px; font-size: 18px;text-transform: uppercase;">Smart
+                                                <label style="background-color: rgba(9, 165, 237, 0.929); padding: 20px; font-size: 18px;text-transform: uppercase;">Smart
                           Feedback</label>
                                             </div>
                                         </div>
@@ -283,32 +261,19 @@
                             </div>
                         </div>
                         <div style="background-image: url('images/banner/formbg.png'); background-size: cover; background-position: center center; background-repeat: no-repeat; background-size: cover; background-position: center center; background-repeat: no-repeat; height: 360px; padding: 40px;">
-                            <h5>Get a Free Whatsapp API</h5>
-
-                            <br>
-
-                            <form class="row g-4 needs-validation" role="form" name="casestudy_form" ng-submit="submitForm(user)">
-
-                                <div class="col-md-12" style="display: none;">
-                                    <input type="text" id="educ" name="educ" value="Education" ng-model="user.title" ng-init="user.title='Education'">
+                            <h5>Get a Free Whatsapp API</h5><br>
+                            <form method="post" action="applynow.php" class="row g-3 needs-validation">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" required>
+                                </div><br><br>
+                                <div class="col-md-6">
+                                    <label for="mobileno" class="form-label">Mobile Number</label>
+                                    <input type="text" class="form-control" id="mobileno" name="mobileno" placeholder="Enter Mobile No" required>
                                 </div>
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" id="name" name="name" ng-model="user.name" placeholder="Your Name" autocomplete="off">
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary w-100">Apply Now</button>
                                 </div>
-
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" name="mobile" ng-model="user.mobile" id="c_num" placeholder="Your Mobile No" ng-pattern="ph_numbr" autocomplete="off">
-                                    <span class="red-text" ng-show="casestudy_form.mobile.$error.pattern">Please Enter a 10 Digit
-                    Number</span>
-                                </div>
-                                <!--<div class="col-md-12">
-      <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required>
-      <div class="invalid-feedback">Valid email is required.</div>
-    </div>-->
-                                <div class="col-md-12">
-                                    <button type="submit" class="btn btn-themes btn-radius" ng-disabled="!user.name || !user.mobile || casestudy_form.$invalid">Apply Now</button>
-                                </div>
-
                             </form>
                         </div>
 
@@ -329,7 +294,7 @@
         <div class="primary-footer">
             <div class="container-fluid p-0">
                 <div class="row">
-                    <div class="col-lg-4" style="background-color: #7dcdfc;">
+                    <div class="col-lg-4" style="background-color: #2cb0fd;">
                         <div class="ht-theme-info bg-contain bg-pos-r h-100 dark-bg text-white" data-bg-img="images/bg/02.png">
                             <div class="footer-logo">
                                 <a href="index.html">
@@ -346,16 +311,16 @@
                                         <div class="container">
                                             <div class="row row-cols-auto">
                                                 <div class="col">
-                                                    <a href="https://www.facebook.com/askeva.io" target="_blank"><i class="fab fa-facebook-f" style="font-size: 30px; color: #f6f9fa;"></i></a>
+                                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/lemeniz/?ref=pages_you_manage" target="_blank"><i class="fab fa-facebook-f" style="font-size: 30px; color: #f6f9fa;"></i></a>
                                                 </div>
                                                 <div class="col">
-                                                    <a href="https://www.instagram.com/askeva.io/" target="_blank"><i class="fab fa-instagram" style="font-size: 30px; color: #f6f9fa;"></i></a>
+                                                    <a href="https://www.instagram.com/lemeniztechnologies?igsh=cjl0M2pqdHo5YmRk" target="_blank"><i class="fab fa-instagram" style="font-size: 30px; color: #f6f9fa;"></i></a>
                                                 </div>
                                                 <div class="col">
-                                                    <a href="https://www.linkedin.com/company/askevaio/" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 30px; color: #f6f9fa;"></i></a>
+                                                    <a href="https://in.linkedin.com/company/lemeniz-infotech" target="_blank"><i class="fab fa-linkedin-in" style="font-size: 30px; color: #f6f9fa;"></i></a>
                                                 </div>
                                                 <div class="col">
-                                                    <a href="https://www.youtube.com/channel/UCKBwYFFB2GbSnXhhowRk7qQ" target="_blank"><i class="fab fa-youtube" style="font-size: 30px; color: #f6f9fa;"></i></a>
+                                                    <a href="https://www.youtube.com/channel/UC29PhUP28_7rxr5cxCVHHLA" target="_blank"><i class="fab fa-youtube" style="font-size: 30px; color: #f6f9fa;"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -372,9 +337,9 @@
                                 <h4 class="title">Company</h4>
                                 <div class="gradient-floor blue-to-purple"></div><br>
                                 <ul class="list-unstyled">
-                                    <li><a href="terms-condition.html">Terms & Condition</a></li>
+                                    <li><a href="terms.html">Terms & Condition</a></li>
                                     <li><a href="refund.html">Refund policy</a></li>
-                                    <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                                    <li><a href="privacy.html">Privacy Policy</a></li>
                                 </ul><br>
                                 <h4 class="title">Payment</h4>
                                 <div class="gradient-floor blue-to-purple"></div><br>
@@ -387,9 +352,9 @@
                                 <div class="gradient-floor blue-to-purple"></div><br>
                                 <ul class="media-icon list-unstyled">
                                     <li><a href="chatbot.html">Whatsapp API Chatbot</a></li>
-                                    <li><a href="whatsappautomation.html">Whatsapp Automation</a></li>
-                                    <li><a href="whatsappecommerce.html">Whatsapp E-Commerce</a></li>
-                                    <li><a href="customersupport.html">Whatsapp Customer Support</a></li>
+                                    <li><a href="automation.html">Whatsapp Automation</a></li>
+                                    <li><a href="e-commerce.html">Whatsapp E-Commerce</a></li>
+                                    <li><a href="support.html">Whatsapp Customer Support</a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-12 col-md-4 col-lg-4 mt-5 mt-md-0 footer-list">
@@ -398,7 +363,6 @@
                                 <ul class="media-icon list-unstyled">
                                     <li><a href="education.html">Case Study</a></li>
                                     <li><a href="https://askeva.gitbook.io/askeva-docs/faqs/faqs" target="_blank">FAQs</a></li>
-                                    <li><a href="career.html">Career</a></li>
                                     <li><a href="https://askeva.gitbook.io/askeva-docs/">Help Desk</a></li>
                                 </ul>
                             </div>
@@ -408,10 +372,10 @@
                                 <div class="align-items-center white-bg box-shadow px-3 py-3 radius d-md-flex justify-content-between">
                                     <h5 class="mb-0">Get a Free Whatsapp API</h5>
                                     <div class="subscribe-form sm-mt-2">
-                                        <form id="mc-form" class="group" name="casestudy_form" ng-submit="apiForm(user)">
-                                            <input type="text" class="form-control" name="phone" id="phnum" placeholder="Mobile Number" ng-model="user.phone" required="">
-                                            <span class="red-text" ng-show="casestudy_form.phone.$error.pattern">Please Enter a 10 Digit Number</span>
-                                            <button class="btn btn-theme" type="submit" ng-disabled="!user.phone || casestudy_form.$invalid"> Apply Now </button>
+                                        <form id="mc-form" class="group" name="casestudy_form" method="post" action="applynow.php">
+                                            <input type="text" class="form-control" name="phone" id="phnum" placeholder="Mobile Number" required>
+                                            <!-- <?php if (!empty($error)) echo "<span class='red-text'>$error</span>"; ?> -->
+                                            <button class="btn btn-theme" type="submit">Apply Now</button>
                                         </form>
                                     </div>
                                 </div>
@@ -435,8 +399,8 @@
     </footer>
 
     <!-- <a href="https://api.whatsapp.com/send?phone=917358518988&text=Hello%21%20Askeva" class="float" target="_blank" style="background-color: #0a6dc4; position: relative; z-index: 20;">
-        <img src="images/whatsappicon.png" alt="AskEVA" class="my-float">
-    </a> -->
+            <img src="images/whatsappicon.png" alt="AskEVA" class="my-float">
+        </a> -->
 
 
 
