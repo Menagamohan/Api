@@ -502,10 +502,10 @@ section {
 }
 
 .featured-item {
-    border: 1px solid #ddd;
+    border: 2px solid #4298f4;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgb(59, 138, 248);
     margin-bottom: 30px;
     transition: all 0.3s ease;
     /* Smooth transition for hover effects */
@@ -731,7 +731,7 @@ section {
 }
 
 .footer .social-icons a:hover {
-    color: #388ff1;
+    color: #021933;
 }
 
 .footer .footer-list h4 {
@@ -1000,7 +1000,7 @@ button[type="submit"]:disabled {
 /* General Tab Styling */
 
 .tab {
-    background: #f8f9fa;
+    background: #a6d0fa;
     padding: 20px;
     border-radius: 10px;
 }
@@ -1024,7 +1024,7 @@ button[type="submit"]:disabled {
 }
 
 .nav-tabs .nav-link.active {
-    background: #007bff;
+    background: #82b8f1;
     color: #fff;
     border-bottom: 2px solid #007bff;
 }
@@ -1033,7 +1033,7 @@ button[type="submit"]:disabled {
 /* Tab Content */
 
 .tab-content {
-    background: #5ab0de;
+    background: #92d1f4;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -1082,3 +1082,35 @@ button[type="submit"]:disabled {
 
 
 /* tab end */
+
+
+/* Shake animation */
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-5px);
+    }
+    40% {
+        transform: translateX(5px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    80% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* Add this class to your button or icon */
+
+.shake:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}

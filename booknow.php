@@ -4,17 +4,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require __DIR__ . '/vendor/autoload.php';
-
-// Database Connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "booknow";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require_once 'includes/comman.php'; // Contains DB connection and $mail setup
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
@@ -35,19 +25,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])) {
     if ($stmt->execute()) {
         echo "✅ Data inserted successfully!<br>";
 
-        // Send Email
-        $mail = new PHPMailer(true);
+        // Send Email using existing $mail from comman.php
         try {
-            $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com';
-            $mail->SMTPAuth = true;
-            $mail->Username = 'menagamohan26@gmail.com';  // Your full Gmail address
-            $mail->Password = 'ekidtmjaraacrhpw';  // Use the App Password, not your Gmail password
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port = 587;
-
-            $mail->setFrom('menagamohan26@gmail.com', 'Booking Form');
-            $mail->addAddress('menagamohan26@gmail.com');
+            $mail->clearAddresses(); // Clear previous addresses if reused
+            $mail->addAddress('menagamohan26@gmail.com', 'Admin');
 
             $mail->isHTML(true);
             $mail->Subject = 'New Booking Submission';
